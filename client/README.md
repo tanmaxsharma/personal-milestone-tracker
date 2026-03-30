@@ -19,6 +19,7 @@ A clean full-stack application to record and track personal achievements. Built 
 - Real-time UI updates after adding a milestone
 - Loading, success, and error states
 - Form validation with clear error messages
+- Backend validation (title min 3 characters)
 - Empty state handling
 - Clean dark UI
 
@@ -92,11 +93,19 @@ Creates a new milestone
 
 ## Technical Decisions
 
-- Centralized API logic in `lib/api.ts`
-- Used React Hooks for state management
-- Handled validation, network, and server errors
-- Auto-reset form after submission
-- Optimistic UI updates for better UX
+- Centralized API handling in `lib/api.ts` for separation of concerns
+- Used React Hooks for lightweight state management
+- Implemented proper error handling for validation (400) and server errors
+- Added loading and success states for better UX
+- Form resets after successful submission
+- Used in-memory storage to keep backend simple as per requirements
+
+---
+
+## Live Demo
+
+- Frontend: https://personal-milestone-tracker.vercel.app/
+- Backend API: https://personal-milestone-tracker.onrender.com/
 
 ---
 
@@ -106,4 +115,10 @@ Tanmay Sharma
 Frontend Developer  
 
 - GitHub: https://github.com/tanmaxsharma  
-- LinkedIn: https://linkedin.com/in/tanmaxsharma
+- LinkedIn: https://linkedin.com/in/tanmaxsharma  
+
+---
+
+## Notes
+
+Used Next.js and Express with in-memory storage to keep the implementation simple and focused. Prioritized clean component structure and robust error handling within the given time constraint.
