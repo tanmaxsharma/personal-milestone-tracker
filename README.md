@@ -107,3 +107,13 @@ Frontend Developer
 
 - GitHub: https://github.com/tanmaxsharma  
 - LinkedIn: https://linkedin.com/in/tanmaxsharma
+- Vercel: https://personal-milestone-tracker.vercel.app/
+
+## Live Demo
+
+- Frontend: https://personal-milestone-tracker.vercel.app/
+- Backend API: https://personal-milestone-tracker.onrender.com/.
+
+## Notes
+
+Due to time constraints, the backend uses in-memory storage instead of a database. The focus was on clean UI, reliable API integration, and proper error handling.
